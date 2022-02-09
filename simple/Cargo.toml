@@ -1,0 +1,18 @@
+[package]
+name = "precompile-simple"
+version = "2.0.0"
+authors = ["Parity Technologies <admin@parity.io>"]
+edition = "2018"
+license = "Apache-2.0"
+homepage = "https://substrate.io"
+repository = "https://github.com/paritytech/frontier/"
+description = "Simple precompiles for EVM pallet."
+
+[dependencies]
+ripemd160 = { version = "0.9", default-features = false }
+evm = "0.33.1"
+libsecp256k1 = { version = "0.7" }
+tiny-keccak = { version = "2.0.1", features = ["keccak"] }
+sha2 = { version = "0.10.0", default-features = false }
+
+precompile-core = { path = "../precompile" }

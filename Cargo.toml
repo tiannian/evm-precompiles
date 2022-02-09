@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "precompile",
+    "blake2",
+    "bn128",
+    "curve25519",
+    "ed25519",
+    "modexp",
+    "sha3fips",
+    "simple",
+]

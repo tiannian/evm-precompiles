@@ -1,0 +1,15 @@
+[package]
+name = "precompile-sha3fips"
+version = "2.0.0"
+authors = ["Parity Technologies <admin@parity.io>", "Drew Stone <drew@commonwealth.im>"]
+edition = "2018"
+license = "Apache-2.0"
+homepage = "https://substrate.io"
+repository = "https://github.com/paritytech/frontier/"
+description = "SHA3 FIPS202 precompile for EVM pallet."
+
+[dependencies]
+tiny-keccak = { version = "2.0", features = ["fips202"] }
+evm = "0.33.1"
+
+precompile-core = { path = "../precompile" }
